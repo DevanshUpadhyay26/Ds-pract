@@ -6,15 +6,16 @@ int main()
 // Vectors => Array that dynamically changes size, no need to say size. Space issue solved!
 
 
-    // vector<int> v1= {1,2,3,4};
+    vector<int> v1= {1,2,3,4};
 
     // int sizeV=v1.size();
     // for(int i=0;i<sizeV;i++){
     //     cout<<v1[i]<<endl;
     // } 
-    // cout<<v1.front()<<endl;
+    cout<<v1.front()<<endl;
     // cout<<v1.back()<<endl;
-    // v1.push_back(5);
+    v1.push_back(5);
+    cout<<v1.back()<<endl;
     // v1.push_back(6);
     // v1.push_back(7);
     // v1.push_back(8);
