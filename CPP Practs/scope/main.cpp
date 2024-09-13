@@ -122,5 +122,23 @@ Scope of Local and Global Variables:
 */
 
 #include <iostream>
-
- // outer block apples destroyed
+namespace classes{
+std::string subject1(){
+    std::string sub1{"OOPs"};
+    std::cout<<sub1<<std::endl;
+    
+}
+std::string subject2(){
+    std::string sub2{"DBMS"};
+    std::cout<<sub2<<std::endl;
+}
+namespace students{
+    void stud1(){
+        std::cout<<"This is student 1"<<std::endl;
+        subject1();
+    }
+    void stud2(){
+        std::cout<<"This is student 2"<<std::endl;
+        subject2();
+    }
+}}

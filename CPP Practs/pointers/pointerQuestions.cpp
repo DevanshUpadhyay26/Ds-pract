@@ -1,6 +1,4 @@
 #include <iostream>
-
-
 using namespace std;
 
 namespace questOne{
@@ -60,7 +58,7 @@ int main(){
 
 namespace questFive{
 
-
+//Question: Write a program to pass an array to a function using pointers and find the sum of its elements.
 int arraySum(int* arr, int size){
 int sum{0};
     for(int i=0; i<size; ++i){
@@ -77,12 +75,40 @@ int main(){
 
 
 }}
+
+
+namespace questSix{
+//Question: Write a program to declare a pointer to a function and use it to call a function.
+    void print(void* ptr, char types){
+    switch (types)
+    {
+    case 'i': cout<< *((int*) ptr)<< '\n'<<"U choose int"<<endl;
+    break;
+    case 'f': cout<< *((float*) ptr)<<endl;
+    break;
+    case 'd': cout<< *((double*) ptr)<<endl;
+    break;
+    case 'c': cout<< *((char*) ptr)<<endl;
+    break;
+    case 'b': cout<< *((bool*) ptr)<<endl;
+    break;
+    default:
+        break;
+    }
+    }
+    int main(){
+        int a{5};
+        void (*ptrFn)(void*, char) = print;
+        ptrFn(&a, 'i');
+    }
+}
+
 int main()
 {
     // questOne::main();
     // questTwo::main();
     // questThree::main();
     // questFour::main();
-
-    questFive::main();
+    // questFive::main();
+    // questSix::main();
 }
