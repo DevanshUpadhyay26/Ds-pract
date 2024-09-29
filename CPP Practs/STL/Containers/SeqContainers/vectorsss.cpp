@@ -75,6 +75,7 @@ namespace vectors
             cout<<"Size of Vector: "<<testV.size()<<endl;
             
             testV.insert(testV.end(), 20);
+            
                for(int i=0;i<testV.size();i++){
                 cout<<testV[i]<<" ";
             }
@@ -133,7 +134,7 @@ namespace vectors
         // v.displayIterators();
         // v.capacity();
         // v.accessEle();
-        v.modifers();
+        // v.modifers();
     }    
     
 } // namespace vectors
